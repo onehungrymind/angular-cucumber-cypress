@@ -1,6 +1,5 @@
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
-
-import { Customer } from '../../customers/customer.model';
+import { Customer } from '@workshop/core-data';
 import { CustomersActions, CustomersActionTypes } from './customers.actions';
 
 /**

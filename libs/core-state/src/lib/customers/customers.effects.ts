@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Actions, Effect } from '@ngrx/effects';
 import { DataPersistence } from '@nrwl/nx';
+import { Customer, CustomersService } from '@workshop/core-data';
 import { map } from 'rxjs/operators';
-
-import { Customer } from '../../customers/customer.model';
-import { CustomersService } from '../../customers/customers.service';
 import { CustomersActionTypes, CustomersLoaded, LoadCustomers } from './customers.actions';
 import { CustomersState } from './customers.reducer';
 

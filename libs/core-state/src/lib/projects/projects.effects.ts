@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { DataPersistence } from '@nrwl/nx';
+import { Project, ProjectsService } from '@workshop/core-data';
 import { map } from 'rxjs/operators';
-
-import { Project } from '../../projects/project.model';
-import { ProjectsService } from '../../projects/projects.service';
 
 import {
   AddProject,

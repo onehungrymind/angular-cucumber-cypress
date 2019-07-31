@@ -4,7 +4,6 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { NxModule } from '@nrwl/nx';
-
 import { reducers } from '.';
 import { CustomersEffects } from './customers/customers.effects';
 import { ProjectsEffects } from './projects/projects.effects';
@@ -22,4 +21,4 @@ import { ProjectsEffects } from './projects/projects.effects';
   ],
   declarations: []
 })
-export class StateModule { }
+export class CoreStateModule { }

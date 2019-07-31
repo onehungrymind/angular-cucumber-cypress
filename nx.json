@@ -25,6 +25,9 @@
     },
     "ui-toolbar": {
       "tags": []
+    },
+    "core-state": {
+      "tags": []
     }
   }
 }

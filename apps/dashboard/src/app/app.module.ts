@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NxModule } from '@nrwl/nx';
 
 import { CoreDataModule } from '@workshop/core-data';
+import { CoreStateModule } from '@workshop/core-state';
 import { MaterialModule } from '@workshop/material';
 import { UiLoginModule } from '@workshop/ui-login';
 import { UiToolbarModule } from '@workshop/ui-toolbar';
@@ -22,12 +23,13 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    CoreDataModule,
     HttpClientModule,
     LayoutModule,
     NxModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    CoreDataModule,
+    CoreStateModule,
     UiLoginModule,
     UiToolbarModule,
     MaterialModule,

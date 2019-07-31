@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Project, ProjectsFacade, Customer, CustomersFacade } from '@workshop/core-data';
+import { Project, Customer } from '@workshop/core-data';
 import { Observable } from 'rxjs';
+import { ProjectsFacade, CustomersFacade } from '@workshop/core-state';
 
 @Component({
   selector: 'app-projects',
@@ -43,74 +44,5 @@ export class ProjectsComponent implements OnInit {
   deleteProject(project) {
     this.projectsFacade.deleteProject(project);
   }
-  // projects$: Observable<Project[]>;
-  // customers$: Observable<Customer[]>;
-  // currentProject: Project;
-
-  // constructor(
-  //   private projectsService: ProjectsService,
-  //   private customerService: CustomersService,
-  //   private ns: NotificationsService) { }
-
-  // ngOnInit() {
-  //   this.getProjects();
-  //   this.getCustomers();
-  //   this.resetCurrentProject();
-  // }
-
-  // resetCurrentProject() {
-  //   this.currentProject = emptyProject;
-  // }
-
-  // selectProject(project) {
-  //   this.currentProject = project;
-  // }
-
-  // cancel(project) {
-  //   this.resetCurrentProject();
-  // }
-
-  // getCustomers() {
-  //   this.customers$ = this.customerService.all();
-  // }
-
-  // getProjects() {
-  //   this.projects$ = this.projectsService.all();
-  // }
-
-  // saveProject(project) {
-  //   if (!project.id) {
-  //     this.createProject(project);
-  //   } else {
-  //     this.updateProject(project);
-  //   }
-  // }
-
-  // createProject(project) {
-  //   this.projectsService.create(project)
-  //     .subscribe(response => {
-  //       this.ns.emit('Project created!');
-  //       this.getProjects();
-  //       this.resetCurrentProject();
-  //     });
-  // }
-
-  // updateProject(project) {
-  //   this.projectsService.update(project)
-  //     .subscribe(response => {
-  //       this.ns.emit('Project saved!');
-  //       this.getProjects();
-  //       this.resetCurrentProject();
-  //     });
-  // }
-
-  // deleteProject(project) {
-  //   this.projectsService.delete(project)
-  //     .subscribe(response => {
-  //       this.ns.emit('Project deleted!');
-  //       this.getProjects();
-  //       this.resetCurrentProject();
-  //     });
-  // }
 }
 

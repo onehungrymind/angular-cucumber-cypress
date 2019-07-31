@@ -3,7 +3,7 @@ import { ActionReducerMap, createFeatureSelector, createSelector } from '@ngrx/s
 import * as fromProjects from './projects/projects.reducer';
 import * as fromCustomers from './customers/customers.reducer';
 
-import { Project } from '../projects/project.model';
+import { Project } from '../../../core-data/src/lib/projects/project.model';
 
 export interface AppState {
   customers: fromCustomers.CustomersState,

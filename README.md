@@ -1,6 +1,4 @@
-# Angular Reactive Workshop
-
-For this workshop, we are going to build Redux state around the `projects` feature with NGRX.
+# Cucumber with Angular and Cypress
 
 ## The Stack
 
