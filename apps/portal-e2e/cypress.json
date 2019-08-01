@@ -4,8 +4,9 @@
   "integrationFolder": "./src/integration",
   "pluginsFile": "./src/plugins/index",
   "supportFile": false,
-  "video": true,
+  "video": false,
   "videosFolder": "../../dist/cypress/apps/portal-e2e/videos",
   "screenshotsFolder": "../../dist/cypress/apps/portal-e2e/screenshots",
-  "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+  "ignoreTestFiles": "**/*.{js,ts}"
 }

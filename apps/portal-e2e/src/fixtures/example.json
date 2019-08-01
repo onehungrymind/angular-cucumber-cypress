@@ -1,4 +1,23 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io"
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@email.com",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "name": "tech",
+      "email": "tech@email.com",
+      "password": "tech"
+    },
+    {
+      "id": 3,
+      "name": "user",
+      "email": "user@email.com",
+      "password": "user"
+    }
+  ]
 }
+
