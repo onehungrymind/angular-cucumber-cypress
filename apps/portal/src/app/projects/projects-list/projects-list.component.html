@@ -10,7 +10,7 @@
         class="record">
         <h3 mat-line>{{project.title}}</h3>
         <p mat-line>
-          {{project.details}}
+          {{project.notes}}
         </p>
         <button *ngIf="!readonly" mat-icon-button (click)="deleted.emit(project);$event.stopImmediatePropagation();">
           <mat-icon>close</mat-icon>

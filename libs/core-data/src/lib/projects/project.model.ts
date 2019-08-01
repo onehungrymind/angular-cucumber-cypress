@@ -1,7 +1,7 @@
 export interface Project {
   id: string;
   title: string;
-  details: string;
+  notes: string;
   percentComplete: number;
   approved: boolean;
   customerId: string;

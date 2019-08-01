@@ -14,7 +14,7 @@
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <textarea matInput data-cy="project-details-details" placeholder="Details" [(ngModel)]="selectedProject.details" type="text" name="details"></textarea>
+        <textarea matInput data-cy="project-details-notes" placeholder="Notes" [(ngModel)]="selectedProject.notes" type="text" name="notes"></textarea>
       </mat-form-field>
 
       <mat-form-field class="full-width">
@@ -27,7 +27,7 @@
 
       <section>
         <h4>{{selectedProject.percentComplete}}% Completed</h4>
-        <mat-slider data-cy="project-details-percent" class="full-width" min="1" max="100" thumbLabel
+        <mat-slider data-cy="project-details-completed" class="full-width" min="1" max="100" thumbLabel
           [(ngModel)]="selectedProject.percentComplete" name="percentComplete">
         </mat-slider>
       </section>

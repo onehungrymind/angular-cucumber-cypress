@@ -1,6 +1,7 @@
 import { Then } from 'cypress-cucumber-preprocessor/steps';
-import { getTitle } from '../../support/pages/app.po';
 
-Then(`I should see {string} in the title`, title => {
-  getTitle().contains(title);
+const BASE_URL = 'http://localhost:4200/';
+
+Then(`I should be on the {string} page`, page => {
+  cy.url().should('eq', `${BASE_URL}${page}`)
 });

@@ -1,0 +1,20 @@
+{
+  "admin": {
+    "id": 1,
+    "role": "admin",
+    "email": "admin@email.com",
+    "password": "password"
+  },
+  "supervisor": {
+    "id": 2,
+    "role": "supervisor",
+    "email": "supervisor@email.com",
+    "password": "password"
+  },
+  "reporter": {
+    "id": 3,
+    "name": "reporter",
+    "email": "reporter@email.com",
+    "password": "password"
+  }
+}
