@@ -26,7 +26,6 @@ export class AuthService {
     this.setToken('');
   }
 
-  // TOKEN
   setToken(token) {
     localStorage.setItem('token', token);
     this.isAuthenticated$.next(token !== ''); // Could be more Robust

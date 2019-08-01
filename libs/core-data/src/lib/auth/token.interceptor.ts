@@ -4,12 +4,20 @@ import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } fr
 import { Injectable } from '@angular/core';
 
 import { AuthService } from './auth.service';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TokenInterceptor implements HttpInterceptor {
-  constructor(public auth: AuthService) { }
+  constructor(private auth: AuthService, private router: Router) { }
+
+  checkAuthorization(event: HttpResponse<any>) {
+    if (event.body.errors && event.body.errors[0].message.statusCode === 401) {
+      this.auth.logout();
+      this.router.navigate(['login']);
+    }
+  }
 
   // intercept request and add token
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
@@ -29,9 +37,7 @@ export class TokenInterceptor implements HttpInterceptor {
       .pipe(
         tap(event => {
           if (event instanceof HttpResponse) {
-            console.log(' all looks good');
-            // http response status code
-            console.log(event.status);
+            this.checkAuthorization(event);
           }
         }, error => {
           // http response status code
