@@ -1,5 +1,5 @@
 {
-  "npmScope": "workshop",
+  "npmScope": "demo",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
@@ -9,12 +9,6 @@
   },
   "projects": {
     "core-data": {
-      "tags": []
-    },
-    "dashboard": {
-      "tags": []
-    },
-    "dashboard-e2e": {
       "tags": []
     },
     "ui-login": {
@@ -27,6 +21,12 @@
       "tags": []
     },
     "core-state": {
+      "tags": []
+    },
+    "portal-e2e": {
+      "tags": []
+    },
+    "portal": {
       "tags": []
     }
   }

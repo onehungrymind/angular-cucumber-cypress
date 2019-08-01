@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '@workshop/core-data';
+import { AuthService } from '@demo/core-data';
 
 @Component({
   selector: 'ui-login',

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Route, RouterModule } from '@angular/router';
-import { MaterialModule } from '@workshop/material';
+import { MaterialModule } from '@demo/material';
 
 import { LoginComponent } from './login/login.component';
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { DataPersistence } from '@nrwl/nx';
-import { Project, ProjectsService } from '@workshop/core-data';
+import { Project, ProjectsService } from '@demo/core-data';
 import { map } from 'rxjs/operators';
 
 import {

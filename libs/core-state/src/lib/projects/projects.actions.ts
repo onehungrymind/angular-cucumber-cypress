@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Project } from '@workshop/core-data';
+import { Project } from '@demo/core-data';
 
 export enum ProjectsActionTypes {
   ProjectsAction = '[Projects] Action',

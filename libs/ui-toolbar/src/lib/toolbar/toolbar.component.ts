@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit, ChangeDetectionStrategy, Input, EventEmitter, Output } from '@angular/core';
-import { AuthService } from '@workshop/core-data';
+import { AuthService } from '@demo/core-data';
 
 @Component({
   selector: 'ui-toolbar',
