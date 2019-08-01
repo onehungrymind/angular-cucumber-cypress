@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Cucumber with Angular and Cypress';
+  title = 'EnterPortal';
   isLoggedIn$: Observable<boolean> = this.authService.isAuthenticated$;
   isLoggedIn;
 
