@@ -8,8 +8,6 @@ Feature: Projects
       | Title     | getRandomTitle   |
       | Notes     | getRandomNotes   |
       | Completed | getRandomPercent |
-    And I check new project details
-      | Approved | getRandomBoolean |
     And I select a new project client
     And I save the new project
     Then I should see the new project in the projects list

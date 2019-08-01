@@ -28,6 +28,6 @@ export const selectProjectClient = () => {
 export const saveProject = () => cy.get(`[data-cy=${elements['submit']}]`).click();
 
 export const verifyNewProject = () => {
-  cy.get(`[data-cy=${elements['list']}] > .mat-list-test > h3`)
+  cy.get(`[data-cy=projects-list] h3.mat-line`)
     .contains('E2E_');
 };
