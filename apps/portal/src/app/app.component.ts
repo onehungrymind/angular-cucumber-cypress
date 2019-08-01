@@ -14,7 +14,8 @@ export class AppComponent {
   isLoggedIn;
 
   links = [
-    { path: '/projects', icon: 'work', label: 'Projects' }
+    { path: '/projects', icon: 'work', label: 'Projects' },
+    { path: '/reports', icon: 'assessment', label: 'Reports' }
   ];
 
   constructor(
@@ -24,11 +25,7 @@ export class AppComponent {
 
   ngOnInit() {
     this.isLoggedIn$
-      .subscribe(loggedIn => {
-        const path = (loggedIn) ? '' : 'login';
-        this.isLoggedIn = loggedIn;
-        this.router.navigate([path]);
-      })
+      .subscribe(loggedIn => this.isLoggedIn = loggedIn);
   }
 
   logout() {

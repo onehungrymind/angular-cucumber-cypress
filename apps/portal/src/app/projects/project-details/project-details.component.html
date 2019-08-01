@@ -7,18 +7,18 @@
       </h1>
     </mat-card-title>
   </mat-card-header>
-  <form (submit)="saved.emit(selectedProject)">
+  <form data-cy="project-details-form" (submit)="saved.emit(selectedProject)">
     <mat-card-content>
       <mat-form-field class="full-width">
-        <input matInput placeholder="Title" [(ngModel)]="selectedProject.title" type="text" name="title">
+        <input matInput placeholder="Title" data-cy="project-details-title"  [(ngModel)]="selectedProject.title" type="text" name="title">
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <textarea matInput placeholder="Details" [(ngModel)]="selectedProject.details" type="text" name="details"></textarea>
+        <textarea matInput data-cy="project-details-details" placeholder="Details" [(ngModel)]="selectedProject.details" type="text" name="details"></textarea>
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <mat-select placeholder="Customer" [(ngModel)]="selectedProject.customerId" name="customerId">
+        <mat-select data-cy="project-details-customer" placeholder="Customer" [(ngModel)]="selectedProject.customerId" name="customerId">
           <mat-option *ngFor="let customer of customers" [value]="customer.id">
             {{customer.firstName}} {{customer.lastName}}
           </mat-option>
@@ -27,18 +27,18 @@
 
       <section>
         <h4>{{selectedProject.percentComplete}}% Completed</h4>
-        <mat-slider class="full-width" min="1" max="100" thumbLabel
+        <mat-slider data-cy="project-details-percent" class="full-width" min="1" max="100" thumbLabel
           [(ngModel)]="selectedProject.percentComplete" name="percentComplete">
         </mat-slider>
       </section>
 
       <section>
-        <mat-checkbox [(ngModel)]="selectedProject.approved" name="approved">Approved by Customer</mat-checkbox>
+        <mat-checkbox data-cy="project-details-approved" [(ngModel)]="selectedProject.approved" name="approved">Approved by Customer</mat-checkbox>
       </section>
     </mat-card-content>
     <mat-card-actions>
-      <button type="submit" mat-button color="primary">Save</button>
-      <button type="button" mat-button (click)="cancelled.emit(selectedProject)">Cancel</button>
+      <button data-cy="project-details-submit" type="submit" mat-button color="primary">Save</button>
+      <button data-cy="project-details-cancel" type="button" mat-button (click)="cancelled.emit(selectedProject)">Cancel</button>
     </mat-card-actions>
   </form>
 </mat-card>

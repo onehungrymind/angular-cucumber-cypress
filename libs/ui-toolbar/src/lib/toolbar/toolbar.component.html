@@ -11,7 +11,7 @@
     </span>
   </span>
   <span class="spacer"></span>
-  <button *ngIf="isLoggedIn" class="login" (click)="logout.emit($event)" mat-mini-fab>
-    <mat-icon>person</mat-icon>
+  <button data-cy="logout" *ngIf="isLoggedIn" class="login" (click)="logout.emit($event)" mat-mini-fab>
+    <mat-icon>logout</mat-icon>
   </button>
 </mat-toolbar>

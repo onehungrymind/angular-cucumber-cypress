@@ -9,14 +9,14 @@
       <form (submit)="login(userLogin.email, userLogin.password)">
         <mat-card-content>
           <mat-form-field>
-            <input matInput placeholder="Email" [(ngModel)]="userLogin.email" type="text" name="email">
+            <input matInput data-cy="login-email" placeholder="Email" [(ngModel)]="userLogin.email" type="text" name="email">
           </mat-form-field>
           <mat-form-field>
-            <input matInput placeholder="Password" [(ngModel)]="userLogin.password" type="password" name="password">
+            <input matInput data-cy="login-password" placeholder="Password" [(ngModel)]="userLogin.password" type="password" name="password">
           </mat-form-field>
         </mat-card-content>
         <mat-card-actions>
-          <button type="submit" mat-raised-button color="primary">Login</button>
+          <button data-cy="login-submit" type="submit" mat-raised-button color="primary">Login</button>
         </mat-card-actions>
       </form>
     </mat-card>

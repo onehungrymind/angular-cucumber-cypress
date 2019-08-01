@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ProjectDetailsComponent } from './projects/project-details/project-deta
     ProjectsComponent,
     ProjectsListComponent,
     ProjectDetailsComponent,
+    ReportsComponent,
   ],
   imports: [
     AppRoutingModule,

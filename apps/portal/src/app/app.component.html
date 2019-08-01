@@ -1,7 +1,7 @@
 <ui-toolbar [isLoggedIn]="isLoggedIn" [title]="title" [sidenav]="sidenav" (logout)="logout($event)"></ui-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav [opened]="isSidenaveOpen(sidenav, isLoggedIn)" #sidenav mode="side" class="app-sidenav">
+  <mat-sidenav data-cy="sidenav" [opened]="isSidenaveOpen(sidenav, isLoggedIn)" #sidenav mode="side" class="app-sidenav">
     <nav>
       <a mat-button class="nav-link" *ngFor="let link of links"
         [routerLink]="link.path" routerLinkActive="active">
