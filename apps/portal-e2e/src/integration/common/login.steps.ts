@@ -1,6 +1,5 @@
 import { Given, When } from 'cypress-cucumber-preprocessor/steps';
 import { gotoLoginScreen, loginAs } from '../../support/pages/login.po';
-import { setUp } from '../../support/utils/remote-data';
 
 let accounts = null;
 
