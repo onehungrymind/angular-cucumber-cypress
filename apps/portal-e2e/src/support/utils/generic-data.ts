@@ -1,8 +1,6 @@
 import * as faker from 'faker';
 import * as moment from 'moment';
 
-
-
 export const getRandomFirstName = () => {
   return `E2E_${faker.name.firstName()}`;
 }

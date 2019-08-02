@@ -1,5 +1,10 @@
-import { When, Then } from 'cypress-cucumber-preprocessor/steps';
-import { completeNewProjectForm, selectProjectClient, saveProject, verifyNewProject } from '../../support/pages/projects.po';
+import { Then, When } from 'cypress-cucumber-preprocessor/steps';
+import { completeNewProjectForm, saveProject, selectProjectClient, verifyNewProject } from '../../support/pages/projects.po';
+import { setUp, cleanUp } from '../../support/utils/remote-data';
+
+beforeEach(() => setUp());
+
+afterEach(() => cleanUp());
 
 When('I type new project details', (datatable) => {
   completeNewProjectForm(datatable, 'type');

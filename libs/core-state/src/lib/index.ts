@@ -40,7 +40,7 @@ export const selectCurrentProjectId = createSelector(
 const emptyProject: Project = {
   id: null,
   title: '',
-  details: '',
+  notes: '',
   percentComplete: 0,
   approved: false,
   customerId: null
